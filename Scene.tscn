@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://sitoday.png" type="Texture" id=1]
 [ext_resource path="res://MapShader.tres" type="Material" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://CherToday.png" type="Texture" id=6]
 [ext_resource path="res://sitradtional.png" type="Texture" id=7]
 [ext_resource path="res://compass-image.png" type="Texture" id=8]
+[ext_resource path="res://MainTheme.tres" type="Theme" id=9]
 
 [sub_resource type="Theme" id=1]
 
@@ -43,10 +44,10 @@ scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 8 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 29.3847
-margin_top = 505.837
-margin_right = 317.385
-margin_bottom = 627.837
+margin_left = 24.8949
+margin_top = 512.572
+margin_right = 312.895
+margin_bottom = 634.572
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource( 1 )
@@ -58,9 +59,10 @@ __meta__ = {
 }
 
 [node name="Cherokee" type="Button" parent="VBoxContainer"]
-margin_top = 34.0
+margin_top = 27.0
 margin_right = 288.0
 margin_bottom = 54.0
+theme = ExtResource( 9 )
 button_mask = 3
 text = "Cherokee"
 __meta__ = {
@@ -70,7 +72,7 @@ __meta__ = {
 [node name="Sioux" type="Button" parent="VBoxContainer"]
 margin_top = 67.0
 margin_right = 288.0
-margin_bottom = 87.0
+margin_bottom = 94.0
 button_mask = 3
 text = "Sioux"
 __meta__ = {
