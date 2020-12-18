@@ -7,8 +7,6 @@ onready var mushome = get_node("../mushome")
 onready var mustoday = get_node("../mustoday2")
 onready var araphome = get_node("../Araphome")
 onready var araptoday = get_node("../araptoday")
-onready var lable = get_node("../Control/ColorRect/Label")
-onready var colorrect = get_node("../ColorRect")
 onready var RedShader = preload("res://RedShader.tres")
 onready var YellowShader = preload("res://YellowShader.tres")
 onready var NormalShader = preload("res://NormalColor.tres")
@@ -24,20 +22,18 @@ func _on_Cherokee_pressed():
 	mustoday.set_material(NormalShader)
 	araphome.set_material(NormalShader)
 	araptoday.set_material(NormalShader)
-	lable.set_text("cherokee\n20,000 people removed, with 2000 extra slaves\nMajor emmigration years: 1836 to 1838\nTreaty:New Echota (1835)\nStayed:1,000\nDeaths Due To Removal 2,000 to 8,000\nPrior Population: 	21,500 + 2000 Slaves")
+
 func _on_Sioux_pressed():
 	chertoday.set_material(NormalShader)
 	cherhome.set_material(NormalShader)
 	sihome.set_material(RedShader)
 	sitoday.set_material(YellowShader)
-	lable.set_text("sioux")
 	mushome.set_material(NormalShader)
 	mustoday.set_material(NormalShader)
 	araphome.set_material(NormalShader)
 	araptoday.set_material(NormalShader)
 
 func _on_Muscogee_pressed():
-	lable.set_text("Muscogee")
 	mustoday.show()
 	mushome.set_material(RedShader)
 	mustoday.set_material(YellowShader)
@@ -49,7 +45,6 @@ func _on_Muscogee_pressed():
 	araptoday.set_material(NormalShader)
 
 func _on_Arapaho_pressed():
-	lable.set_text("Arapaho\nCheyenne and\nComanche")
 	sihome.set_material(NormalShader)
 	sitoday.set_material(NormalShader)
 	mushome.set_material(NormalShader)

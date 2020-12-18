@@ -22,3 +22,8 @@ func _on_arrow_pressed():
 	sioux.disabled = false
 	uibutton.disabled = false
 	arrow.hide()
+
+
+func _on_Refresh_pressed():
+	get_tree().change_scene("res://Scene.tscn")
+
