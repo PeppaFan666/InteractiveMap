@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://sitoday.png" type="Texture" id=1]
 [ext_resource path="res://MapShader.tres" type="Material" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://CherToday.png" type="Texture" id=6]
 [ext_resource path="res://sitradtional.png" type="Texture" id=7]
 [ext_resource path="res://compass-image.png" type="Texture" id=8]
+
+[sub_resource type="Theme" id=1]
 
 [node name="Scene" type="Node"]
 
@@ -47,6 +49,7 @@ margin_right = 317.385
 margin_bottom = 627.837
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource( 1 )
 custom_constants/separation = 13
 alignment = 1
 __meta__ = {
@@ -70,6 +73,28 @@ margin_right = 288.0
 margin_bottom = 87.0
 button_mask = 3
 text = "Sioux"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 849.296
+margin_top = 74.6616
+margin_right = 1031.3
+margin_bottom = 369.662
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect"]
+margin_right = 182.0
+margin_bottom = 294.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+align = 1
+valign = 1
+uppercase = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
