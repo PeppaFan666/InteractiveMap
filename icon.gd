@@ -23,3 +23,7 @@ func _on_Sioux_pressed():
 	sitoday.set_material(YellowShader)
 	lable.set_text("sioux")
 
+
+
+
+
