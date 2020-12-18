@@ -3,7 +3,9 @@ onready var cherhome = get_node("../Ctraditional")
 onready var chertoday = get_node("../CherToday")
 onready var sihome = get_node("../sitradtional")
 onready var sitoday = get_node("../sitoday")
-onready var lable = get_node("../ColorRect/Label")
+onready var mushome = get_node("../mushome")
+onready var mustoday = get_node("../mustoday2")
+onready var lable = get_node("../Control/ColorRect/Label")
 onready var colorrect = get_node("../ColorRect")
 onready var RedShader = preload("res://RedShader.tres")
 onready var YellowShader = preload("res://YellowShader.tres")
@@ -15,6 +17,8 @@ func _on_Cherokee_pressed():
 	cherhome.set_material(RedShader)
 	sihome.set_material(NormalShader)
 	sitoday.set_material(NormalShader)
+	mushome.set_material(NormalShader)
+	mustoday.set_material(NormalShader)
 	lable.set_text("cherokee")
 func _on_Sioux_pressed():
 	chertoday.set_material(NormalShader)
@@ -22,8 +26,14 @@ func _on_Sioux_pressed():
 	sihome.set_material(RedShader)
 	sitoday.set_material(YellowShader)
 	lable.set_text("sioux")
+	mushome.set_material(NormalShader)
+	mustoday.set_material(NormalShader)
 
-
-
-
-
+func _on_Muscogee_pressed():
+	lable.set_text("Muscogee")
+	mushome.set_material(RedShader)
+	mustoday.set_material(YellowShader)
+	sihome.set_material(NormalShader)
+	sitoday.set_material(NormalShader)
+	chertoday.set_material(NormalShader)
+	cherhome.set_material(NormalShader)
