@@ -24,7 +24,7 @@ func _on_Cherokee_pressed():
 	mustoday.set_material(NormalShader)
 	araphome.set_material(NormalShader)
 	araptoday.set_material(NormalShader)
-	lable.set_text("cherokee")
+	lable.set_text("cherokee\n20,000 people removed, with 2000 extra slaves\nMajor emmigration years: 1836 to 1838\nTreaty:New Echota (1835)\nStayed:1,000\nDeaths Due To Removal 2,000 to 8,000\nPrior Population: 	21,500 + 2000 Slaves")
 func _on_Sioux_pressed():
 	chertoday.set_material(NormalShader)
 	cherhome.set_material(NormalShader)
@@ -49,7 +49,7 @@ func _on_Muscogee_pressed():
 	araptoday.set_material(NormalShader)
 
 func _on_Arapaho_pressed():
-	lable.set_text("Arapaho Cheyenne and Comanche")
+	lable.set_text("Arapaho\nCheyenne and\nComanche")
 	sihome.set_material(NormalShader)
 	sitoday.set_material(NormalShader)
 	mushome.set_material(NormalShader)
