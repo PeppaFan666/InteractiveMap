@@ -17,7 +17,10 @@ _global_script_class_icons={
 
 config/name="InteractiveMap"
 run/main_scene="res://Scene.tscn"
-config/icon="res://icon.png"
+boot_splash/image="res://arrow.png"
+boot_splash/use_filter=false
+boot_splash/bg_color=Color( 1, 1, 1, 1 )
+config/icon="res://arrow.png"
 
 [display]
 
